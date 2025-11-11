@@ -1,0 +1,19 @@
+2025-10-31 23:52:36 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235236.log
+2025-10-31 23:52:36 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235236.log
+2025-10-31 23:52:36 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235236.log
+2025-10-31 23:52:36 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235236.log
+2025-10-31 23:52:36 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:36 - LLMHelper - INFO - [llm_helper.py:174] - [SM-003-W1] LLM initialized: gemini-2.0-flash-exp (temp=0.3)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:174] - [SM-002-W1] LLM initialized: gemini-2.0-flash-exp (temp=0.3)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:174] - [SM-003-W3] LLM initialized: gemini-2.0-flash-exp (temp=0.3)
+2025-10-31 23:52:37 - LLMHelper - INFO - [llm_helper.py:174] - [SM-003-W2] LLM initialized: gemini-2.0-flash-exp (temp=0.3)
+2025-10-31 23:52:43 - LLMHelper - WARNING - [llm_helper.py:62] - [SM-003-W2] Enforcing 8.0s minimum delay. Waiting 3.9s
+2025-10-31 23:52:44 - LLMHelper - WARNING - [llm_helper.py:62] - [SM-003-W1] Enforcing 8.0s minimum delay. Waiting 3.4s
+2025-10-31 23:52:44 - LLMHelper - WARNING - [llm_helper.py:62] - [SM-002-W1] Enforcing 8.0s minimum delay. Waiting 3.1s
+2025-10-31 23:52:49 - LLMHelper - WARNING - [llm_helper.py:231] - [SM-002-W1] Quota/rate limit hit (attempt 1/5). Waiting 20.0s before retry...
+2025-10-31 23:53:12 - LLMHelper - WARNING - [llm_helper.py:231] - [SM-002-W1] Quota/rate limit hit (attempt 2/5). Waiting 40.0s before retry...
+2025-10-31 23:53:55 - LLMHelper - WARNING - [llm_helper.py:62] - [SM-002-W1] Enforcing 8.0s minimum delay. Waiting 4.4s
+2025-10-31 23:54:02 - LLMHelper - WARNING - [llm_helper.py:62] - [SM-002-W1] Enforcing 8.0s minimum delay. Waiting 5.5s

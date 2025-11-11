@@ -1,0 +1,12 @@
+2025-10-31 23:52:35 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235235.log
+2025-10-31 23:52:35 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235235.log
+2025-10-31 23:52:35 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235235.log
+2025-10-31 23:52:36 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:36 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:36 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:36 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:36 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:36 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:39 - PDFExtractor - INFO - [pdf_extractor.py:145] - Extracted 5/5 pages from range 17-21
+2025-10-31 23:52:39 - PDFExtractor - INFO - [pdf_extractor.py:145] - Extracted 6/6 pages from range 1-6
+2025-10-31 23:52:39 - PDFExtractor - INFO - [pdf_extractor.py:145] - Extracted 10/10 pages from range 7-16

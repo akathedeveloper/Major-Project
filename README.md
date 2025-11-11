@@ -1,16 +1,24 @@
-# 🧠 Multi-Agent AI System (MVP)
-
-This project is an **MVP architecture for a multi-agent AI system** that combines **Natural Language Processing (NLP)**, **Computer Vision**, and **Knowledge Retrieval** with a modular design.  
-
-At the core is a **Root Master Orchestrator** that delegates tasks to specialized **Sub-Masters** (NLP, Vision, Knowledge, Pricing). Each Sub-Master controls multiple **Sub-Agents**, enabling distributed and scalable execution.  
-
-The system leverages:
-- **LangChain** for orchestrating NLP pipelines,  
-- **ResNet & Vision Agents** for feature extraction,  
-- **Vector Databases (Pinecone/Qdrant/Weaviate)** for semantic search,  
-- **Metadata & Knowledge Stores** for structured retrieval,  
-- **Pricing & Business Logic Engines** for decision-making.  
-
-It is designed with a **cloud-ready, fault-tolerant architecture**, using messaging queues, schedulers, and observability tools to ensure smooth operation.  
-
-This forms the foundation of a **scalable, intelligent multi-agent platform** that can be extended into production-ready applications.  
+# Agentiops
+1. User provides PDF
+   ↓
+2. Master Agent validates metadata
+   ↓
+3. Master Agent creates plan with 2 SubMasters
+   ↓
+4. Orchestrator spawns 2 SubMaster Ray actors
+   ↓
+5. Each SubMaster spawns 3 Worker Ray actors
+   ↓
+6. SubMaster extracts text from PDF
+   ↓
+7. SubMaster distributes pages to Workers (round-robin)
+   ↓
+8. Workers call LLM API to analyze pages
+   ↓
+9. Workers return results to SubMasters
+   ↓
+10. SubMasters aggregate results
+   ↓
+11. Orchestrator collects all SubMaster results
+   ↓
+12. Report Generator creates JSON + PDF

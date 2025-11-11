@@ -1,0 +1,40 @@
+2025-10-31 23:52:26 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235226.log
+2025-10-31 23:52:27 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:24] - Mapper initialized: ./output
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:162] - ================================================================================
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:163] - MAPPER WORKFLOW STARTED
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:164] - Input: data/2510.02125v1.pdf
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:165] - ================================================================================
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:28] - Validating input...
+2025-10-31 23:52:27 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:60] - PDF validated: 21 pages, 2.4MB
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:78] - ✅ Validation passed
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:83] - Extracting metadata: data/2510.02125v1.pdf
+2025-10-31 23:52:27 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:126] - Metadata extracted: 21 pages, 4 sections
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:155] - Metadata saved: ./output/metadata_('2510.02125v1', '.pdf')_20251031_235227.json
+2025-10-31 23:52:27 - Monitor - INFO - [monitor.py:36] - System Stats - CPU: 30.2%, Memory: 157.5MB (Δ+5.2MB), Threads: 1, Time: 0.0s
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:190] - ✅ Mapper completed in 0.01s
+2025-10-31 23:52:27 - Mapper - INFO - [mapper.py:191] - 📁 Metadata: ./output/metadata_('2510.02125v1', '.pdf')_20251031_235227.json
+2025-10-31 23:52:28 - LLMHelper - INFO - [llm_helper.py:174] - [MA-0B25F1] LLM initialized: gemini-2.0-flash-exp (temp=0.3)
+2025-10-31 23:52:28 - MasterAgent - INFO - [master_agent.py:35] - [INIT] Master Agent MA-0B25F1 initialized with model gemini-2.0-flash-exp.
+2025-10-31 23:52:28 - MasterAgent - INFO - [master_agent.py:277] - [EXEC] Processing: 2510.02125v1.pdf
+2025-10-31 23:52:28 - MasterAgent - INFO - [master_agent.py:179] - [START] Entering feedback loop...
+2025-10-31 23:52:33 - MasterAgent - INFO - [master_agent.py:237] - User approved the plan.
+2025-10-31 23:52:33 - MasterAgent - INFO - [master_agent.py:293] - Final plan saved: ./output/submasters_plan.json
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:14] - Ray initialized
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:23] - Spawning 3 SubMasters...
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:31] - ✅ Spawned SM-001: Summarize Abstract and Introduction sections for overview
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:31] - ✅ Spawned SM-002: Extract key methods and results from the Body section. Focus
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:31] - ✅ Spawned SM-003: Synthesize the Conclusion section and identify the key findi
+2025-10-31 23:52:35 - Orchestrator - INFO - [orchestrator.py:37] - Initializing SubMasters...
+2025-10-31 23:52:39 - Orchestrator - INFO - [orchestrator.py:40] - ✅ All SubMasters initialized
+2025-10-31 23:52:39 - Orchestrator - INFO - [orchestrator.py:43] - Starting parallel processing...
+2025-10-31 23:53:56 - Orchestrator - INFO - [orchestrator.py:51] - ✅ SM-001 completed successfully
+2025-10-31 23:54:11 - Orchestrator - INFO - [orchestrator.py:51] - ✅ SM-002 completed successfully
+2025-10-31 23:54:11 - Orchestrator - INFO - [orchestrator.py:51] - ✅ SM-003 completed successfully
+2025-10-31 23:54:11 - Orchestrator - INFO - [orchestrator.py:56] - Processing complete: 3 SubMasters
+2025-10-31 23:54:11 - ReportGenerator - INFO - [report_generator.py:274] - ✅ JSON results saved: output/2510.02125v1_results_20251031_235411.json
+2025-10-31 23:54:11 - ReportGenerator - ERROR - [report_generator.py:311] - Failed to generate PDF: "Style 'BodyText' already defined in stylesheet"
+2025-10-31 23:54:11 - ReportGenerator - WARNING - [report_generator.py:312] - JSON report is still available
+2025-10-31 23:54:11 - ReportGenerator - INFO - [report_generator.py:315] - ✅ Report generation completed

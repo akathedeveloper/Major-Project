@@ -1,0 +1,18 @@
+2025-10-31 23:52:13 - utils.logger - INFO - [logger.py:88] - Logging initialized. Log file: logs/agentops_20251031_235213.log
+2025-10-31 23:52:14 - LLMHelper - INFO - [llm_helper.py:45] - GlobalRateLimiter initialized: 8 RPM, 45 requests/day (ULTRA-CONSERVATIVE)
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:24] - Mapper initialized: ./output
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:162] - ================================================================================
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:163] - MAPPER WORKFLOW STARTED
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:164] - Input: data/2510.02125v1.pdf
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:165] - ================================================================================
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:28] - Validating input...
+2025-10-31 23:52:14 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:60] - PDF validated: 21 pages, 2.4MB
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:78] - ✅ Validation passed
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:83] - Extracting metadata: data/2510.02125v1.pdf
+2025-10-31 23:52:14 - PDFExtractor - INFO - [pdf_extractor.py:52] - Loaded PDF: 2510.02125v1.pdf (21 pages)
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:126] - Metadata extracted: 21 pages, 4 sections
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:155] - Metadata saved: ./output/metadata_('2510.02125v1', '.pdf')_20251031_235214.json
+2025-10-31 23:52:14 - Monitor - INFO - [monitor.py:36] - System Stats - CPU: 27.7%, Memory: 128.9MB (Δ+5.1MB), Threads: 1, Time: 0.0s
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:190] - ✅ Mapper completed in 0.01s
+2025-10-31 23:52:14 - Mapper - INFO - [mapper.py:191] - 📁 Metadata: ./output/metadata_('2510.02125v1', '.pdf')_20251031_235214.json
